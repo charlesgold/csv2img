@@ -39,14 +39,25 @@ def makeImg2 (txt, outImg)
 
 	#text.draw(img)
 
-	img.write outImg
+	img.write 'output/'+outImg
 
 end
 
 
+
+#Main block of code
+prime = 0
 CSV.foreach('code.csv') do |row|
-	puts row[0] + '.gif'
-	makeImg2 row[0], row[0] + '.gif'
+	if prime > 0
+		
+		puts row[0] + '.gif'
+		makeImg2 row[0], row[0] + '.gif'
+
+		prime = prime + 1
+	else
+		#skip first row
+		prime = prime + 1
+	end
 
 end
 
