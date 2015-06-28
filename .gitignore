@@ -1,5 +1,6 @@
 ##Specific to project (private)
 codes.csv
+code.csv
 *.gif
 
 *.gem
