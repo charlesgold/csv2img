@@ -1,3 +1,7 @@
+##Specific to project (private)
+codes.csv
+*.gif
+
 *.gem
 *.rbc
 /.config
